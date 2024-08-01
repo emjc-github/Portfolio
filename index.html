@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>MY PORTFOLIO</title>
+    </head>
+
+    <body>
+        <h1>MY PORTFOLIO</h1>
+        <a href="">Projects and other work!</a>
+        <h3>By yours truly</h3>
+        <h2>Enrique</h2>
+        <div class="block">
+            <section id="left-side" class="section 1" onclick="myFunction()">
+                <div class="bubble-cell-left">
+                    <div class="text-bubble">
+                        <u1>About Me</u1>
+                        <p>Click here to know more about me and who I am</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="right-side" class="clear-L" onclick="myFunction()">
+                <div class="bubble-cell-right clear-L">
+                    <div class="text-bubble">
+                        <u1>Interests</u1>
+                        <p>Click here to know what I like to do</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="left-side2" class="clear-R">
+                <div class="bubble-cell-left clear-R">
+                    <div class="text-bubble">
+                        <u1>Experience</u1>
+                        <p>Click here to know my experience in the HGP</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div id="aboutmodal" class="modal">
+                <div class="modal-content1">
+                    <h1 id="bubble-headers">About me</h1>
+                    <span class="close">&times;</span>
+                    <div id="text">
+                        <p1>My name is Enrique Matthew Johnson-Chumbes and I'm in the Baltimore Cohort of the Hidden Genius Project as I just turned 15. I live on the east side of Baltimore and grew up with my mom, dad, and sister with a range of pets. I go to Poly Tech so I spend most of my time playing sports, doing work, or playing video games with my friends and hanging out with them. I always try to expand my horizon by creating many habits to better my future and that is why I joined the Hidden Genius Project.</p>
+                    </div>
+                    <img src="#" alt="Pictue of me">
+                </div>
+            </div>
+            <div id="interestsmodal" class="modal">
+                <div class="modal-content2">
+                    <h1 id="bubble-headers">Interests</h1>
+                    <span class="close">&times;</span>
+                    <div id="text">
+                        <ul>
+                            <li>Soccer</li>
+                            <li>Video Games (honestly I can't fit the games I play on one page)</li>
+                            <li>Basketball</li>
+                            <li>Engineering</li>
+                            <li>Coding</li>
+                            <li>Making Money</li>
+                            <li>Wachting Sports</li>
+                            <li>TV shows and Movies</li>
+                            <li>Chess</li>
+                            <li>Outdoor Activies (Camping, Fishing, kyaking, hiking, and ect.)</li>
+                            <li>Eating new foods</li>
+                            <li>Family Board Games</li>
+                            <li>Swimming in pools</li>
+                            <li>Hanging out with friends</li>
+                            <li>Supporting the community</li>
+                            <li>Having fun with family</li>
+                            <li>Art and Music</li>
+                            <li>I also play with my pets</li>
+                            <li>Creative Writting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="experiencemodal" class="modal">
+                <div class="modal-content3">
+                    <h1 id="bubble-headers">Experience</h1>
+                    <span class="close">&times;</span>
+                    <div id="modal-text-background">
+                        <p1>My experience in the Hidden Genisu Project was unfortunetly was short because of summer camps but I feel pround and accomplished of the work I completed and the friends I made through this program. Before I was here I knew zero experience in coding and had didn't really want to put more on my plate than I already had but this was one of my favorite summer experiences I ever had.</p>
+                    </div>
+                    <img src="HGP Logo.png" id="Hidden" alt="HGP logo">
+                    <img src="code-3.jpg" id="Code" alt="Coding Image">
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            var about=document.getElementById("aboutmodal");
+            var interests=document.getElementById("interestsmodal");
+            var experience=document.getElementById("experiencemodal");
+
+            var btn=document.getElementById("left-side");
+            var btn2=document.getElementById("right-side");
+            var btn3=document.getElementById("left-side2");
+
+            var span1=document.getElementsByClassName("close")[0];
+            var span2=document.getElementsByClassName("close")[1];
+            var span3=document.getElementsByClassName("close")[2];
+
+            /*When user click the tab*/
+            btn.onclick = function(){
+                about.style.display = "block";
+            }
+            btn2.onclick = function(){
+                interests.style.display = "block";
+            }
+            btn3.onclick = function(){
+                experience.style.display = "block";
+            }
+
+            span1.onclick = function(){
+                about.style.display = "none"
+            }
+
+            span2.onclick = function(){
+                interests.style.display = "none"
+            }
+
+            span3.onclick = function(){
+                experience.style.display = "none"
+            }
+        </script>
+    </body>
+</html>
