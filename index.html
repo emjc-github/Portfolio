@@ -6,13 +6,15 @@
         <link rel="stylesheet" href="styles.css">
         <title>MY PORTFOLIO</title>
     </head>
-
     <body>
+    <a href="https://github.comhttps://github.com">Projects and other work!</a>
         <h1>MY PORTFOLIO</h1>
-        <a href="">Projects and other work!</a>
         <h3>By yours truly</h3>
-        <h2>Enrique</h2>
+        <h2>Enrique Matthew Johnson-CHumbes</h2>
         <div class="block">
+            <!--<img src="JAKE!!.gif" alt="Jake" class="Gif">-->
+            
+            <!--1st Row-->
             <section id="left-side" class="section 1" onclick="myFunction()">
                 <div class="bubble-cell-left">
                     <div class="text-bubble">
@@ -21,8 +23,22 @@
                     </div>
                 </div>
             </section>
+            <section id="right-side" onclick="myFunction()">
+                <div class="bubble-cell-right" style="background-color: #00000000;">
+                    <img src="JAKE!!.gif" alt="Jake" class="jakeIMG">
+                </div>
+            </section>
 
-            <section id="right-side" class="clear-L" onclick="myFunction()">
+            <div class="clear-L clear-R"></div>
+
+
+            <!--2nd Row-->
+            <section id="left-side2" class="section 1" onclick="myFunction()">
+                <div class="bubble-cell-left clear-R" style="background-color: rgba(0, 0, 0, 0);">
+                    <inframe> https://docs.google.com/presentation/d/1vN1yf5dFnVOGGlpA8Mh7OnsydLXdhjocXUVenY5tikM/embed?start=true&loop=true&delayms=60000 frameborder width="350" height="225" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+            </section>
+            <section id="right-side2" onclick="myFunction()">
                 <div class="bubble-cell-right clear-L">
                     <div class="text-bubble">
                         <u1>Interests</u1>
@@ -31,7 +47,11 @@
                 </div>
             </section>
 
-            <section id="left-side2" class="clear-R">
+            <div class="clear-L clear-R"></div>
+
+
+            <!--3rd Row-->
+            <section id="left-side3" class="clear-R clear-L">
                 <div class="bubble-cell-left clear-R">
                     <div class="text-bubble">
                         <u1>Experience</u1>
@@ -39,14 +59,20 @@
                     </div>
                 </div>
             </section>
-
+            <section id="right-side3" onclick="myFunction()">
+                <div class="bubble-cell-right clear-L"  style="background-color: rgba(0, 0, 0, 0);">
+                    <div class="text-bubble">
+                        <img src="Unknown.png" alt="Logo" id="GeniusIMG">
+                    </div>
+                </div>
+            </section>
 
             <div id="aboutmodal" class="modal">
                 <div class="modal-content1">
                     <h1 id="bubble-headers">About me</h1>
                     <span class="close">&times;</span>
                     <div id="text">
-                        <p1>My name is Enrique Matthew Johnson-Chumbes and I'm in the Baltimore Cohort of the Hidden Genius Project as I just turned 15. I live on the east side of Baltimore and grew up with my mom, dad, and sister with a range of pets. I go to Poly Tech so I spend most of my time playing sports, doing work, or playing video games with my friends and hanging out with them. I always try to expand my horizon by creating many habits to better my future and that is why I joined the Hidden Genius Project.</p>
+                        <p1>My name is Enrique Matthew Johnson-Chumbes and I joined the Baltimore Cohort of the Hidden Genius Project as I just turned 15. I live on the east side of Baltimore and grew up with my mom, dad, and sister with a range of pets. I go to Poly Tech so I spend most of my time playing sports, doing work, or playing video games with my friends and hanging out with them. I always try to expand my horizon with my creativity by creating new habits to better my future and that is why I joined the Hidden Genius Project.</p>
                     </div>
                     <img src="#" alt="Pictue of me">
                 </div>
@@ -57,10 +83,10 @@
                     <span class="close">&times;</span>
                     <div id="text">
                         <ul>
-                            <li>Soccer</li>
-                            <li>Video Games (honestly I can't fit the games I play on one page)</li>
+                            <li>Soccer and Racquetball</li>
+                            <li>Video Games (honestly I can't fit all the games I play)</li>
                             <li>Basketball</li>
-                            <li>Engineering</li>
+                            <li>All kinds of Engineering</li>
                             <li>Coding</li>
                             <li>Making Money</li>
                             <li>Wachting Sports</li>
@@ -74,8 +100,10 @@
                             <li>Supporting the community</li>
                             <li>Having fun with family</li>
                             <li>Art and Music</li>
-                            <li>I also play with my pets</li>
                             <li>Creative Writting</li>
+                            <li>Playing the Piano</li>
+                            <li>Computer Making</li>
+
                         </ul>
                     </div>
                 </div>
@@ -100,14 +128,13 @@
             var experience=document.getElementById("experiencemodal");
 
             var btn=document.getElementById("left-side");
-            var btn2=document.getElementById("right-side");
-            var btn3=document.getElementById("left-side2");
+            var btn2=document.getElementById("right-side2");
+            var btn3=document.getElementById("left-side3");
 
             var span1=document.getElementsByClassName("close")[0];
             var span2=document.getElementsByClassName("close")[1];
             var span3=document.getElementsByClassName("close")[2];
 
-            /*When user click the tab*/
             btn.onclick = function(){
                 about.style.display = "block";
             }
